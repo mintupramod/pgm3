@@ -1,0 +1,56 @@
+import java.io.*;
+import java.lang.String;
+import java.net.*;
+public class Matrix
+{
+	public static void main(String[]args)throws IOException
+	{
+		int m,n,i,j,p,q;
+        	int a[][]=new int[10][10];
+        	int b[][]=new int[10][10];
+        	int c[][]=new int[10][10];
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter the order of first matrix");
+		m=Integer.parseInt(br.readLine());
+		n=Integer.parseInt(br.readLine());
+		System.out.println("Enter the elements");
+		for(i=0;i<m;i++)
+		{
+			for(j=0;j<n;j++)
+			{
+				a[i][j]=Integer.parseInt(br.readLine());
+			}
+		}
+		System.out.println("First matrix");
+		for(i=0;i<m;i++)
+        	{
+                	for(j=0;j<n;j++)
+                	{
+			
+           			System.out.println(a[i][j]+"\t");
+			
+                	}
+			System.out.println("\n");
+        	}
+		System.out.println("Enter the order of second matrix");
+                p=Integer.parseInt(br.readLine());
+                q=Integer.parseInt(br.readLine());
+                System.out.println("Enter the elements");
+                for(i=0;i<p;i++)
+                {
+                        for(j=0;j<q;j++)
+                        {
+                                b[i][j]=Integer.parseInt(br.readLine());
+                        }
+                }
+                System.out.println("Second matrix");
+                for(i=0;i<p;i++)
+                {
+                        for(j=0;j<q;j++)
+                        {
+                                System.out.println(b[i][j]);
+                        }
+                }
+	
+	}
+}
